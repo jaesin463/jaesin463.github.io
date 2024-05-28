@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: BinD # the main title
 
-tagline: Backend와 DevOps 그 사이 어딘가 # it will display as the sub-title
+tagline: Backend와 DevOps\n그 사이 어딘가 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   풀스택 개발을 꿈꾸다
@@ -39,7 +39,6 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://https://github.com/jaesin463 # change to your twitter homepage
-    # - https://github.com/username # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -93,10 +92,10 @@ theme_mode: "dark" # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: "https://chirpy-img.netlify.app"
+# cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/img/avatar.jpg"
+avatar: "/assets/img/avatar.ipg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
