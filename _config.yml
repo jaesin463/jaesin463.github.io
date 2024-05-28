@@ -6,7 +6,7 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: en
+lang: ko
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Asia/Seoul
@@ -16,10 +16,10 @@ timezone: Asia/Seoul
 
 title: BinD # the main title
 
-tagline: Backend와 DevOps\n그 사이 어딘가 # it will display as the sub-title
+tagline: Backend와 DevOps 그 사이 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  풀스택 개발을 꿈꾸다
+  dev, backend, devops, algorithm, baekjoon, infra
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -189,10 +189,10 @@ defaults:
     values:
       layout: page
       permalink: /:title/
-  - scope:
-      path: assets/js/dist
-    values:
-      swcache: true
+  # - scope:
+  #     path: assets/js/dist
+  #   values:
+  #     swcache: true
 
 sass:
   style: compressed
