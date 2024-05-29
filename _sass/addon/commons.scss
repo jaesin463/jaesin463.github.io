@@ -28,8 +28,7 @@ html {
 
 body {
   background: var(--main-bg);
-  padding: env(safe-area-inset-top) env(safe-area-inset-right)
-    env(safe-area-inset-bottom) env(safe-area-inset-left);
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   font-family: $font-family-base;
@@ -307,8 +306,12 @@ sup {
           @extend %table-cell;
         }
       }
-    } /* tbody */
-  } /* table */
+    }
+
+    /* tbody */
+  }
+
+  /* table */
 }
 
 /* --- post --- */
@@ -475,7 +478,9 @@ main {
       margin: 0 0.5rem 0.2rem -1.3rem;
       vertical-align: middle;
     }
-  } /* ul */
+  }
+
+  /* ul */
 
   dl > dd {
     margin-left: 1rem;
@@ -484,7 +489,9 @@ main {
   ::marker {
     color: var(--text-muted-color);
   }
-} /* .content */
+}
+
+/* .content */
 
 .tag:hover {
   @extend %tag-hover;
@@ -774,27 +781,50 @@ $btn-mb: 0.5rem;
 
         &:hover {
           background-color: var(--sidebar-hover-bg);
+
+          span {
+            opacity: 1;
+            color: rgba(241, 241, 241, 0.99);
+          }
+
+          i {
+            font-size: 100%;
+            opacity: 1;
+            margin-right: 1.5rem;
+            color: rgba(241, 241, 241, 0.99);
+          }
         }
 
         i {
-          font-size: 95%;
-          opacity: 0.8;
+          font-size: 100%;
+          opacity: 1;
           margin-right: 1.5rem;
+          color: rgba(222, 222, 222, 0.99);
         }
 
         span {
           font-size: 90%;
           letter-spacing: 0.2px;
+          color: rgba(222, 222, 222, 0.99);
         }
       }
 
       &.active {
         .nav-link {
-          color: var(--sidebar-active-color);
+          //color: var(--sidebar-active-color);
+          color: rgba(255, 255, 255, 0.99);
           background-color: var(--sidebar-hover-bg);
 
           span {
             opacity: 1;
+            color: rgba(255, 255, 255, 0.99);
+          }
+
+          i {
+            font-size: 100%;
+            opacity: 1;
+            margin-right: 1.5rem;
+            color: rgba(255, 255, 255, 0.99);
           }
         }
       }
@@ -864,8 +894,12 @@ $btn-mb: 0.5rem;
       border-radius: 50%;
       margin-bottom: $btn-mb;
     }
-  } /* .sidebar-bottom */
-} /* #sidebar */
+  }
+
+  /* .sidebar-bottom */
+}
+
+/* #sidebar */
 
 @media (hover: hover) {
   #sidebar ul > li:last-child::after {
@@ -922,7 +956,9 @@ $btn-mb: 0.5rem;
       }
     }
   }
-} /* #topbar */
+}
+
+/* #topbar */
 
 ::-webkit-input-placeholder {
   @include placeholder;
@@ -1070,7 +1106,9 @@ search {
       -webkit-box-orient: vertical;
     }
   }
-} /* #search-results */
+}
+
+/* #search-results */
 
 #topbar-title {
   display: none;
@@ -1341,7 +1379,9 @@ search {
       margin-top: 2.5rem;
     }
   }
-} /* max-width: 849px */
+}
+
+/* max-width: 849px */
 
 /* Sidebar is visible */
 @media all and (min-width: 850px) {
@@ -1529,4 +1569,6 @@ search {
       }
     }
   }
-} /* min-width: 1650px */
+}
+
+/* min-width: 1650px */
