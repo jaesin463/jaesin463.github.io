@@ -9,3 +9,5 @@ group :test do
 end
 
 gem 'jekyll-admin', group: :jekyll_plugins
+
+gem 'jekyll-target-blank'
